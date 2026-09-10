@@ -5,51 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Системне програмування | Шимчук Владислав</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="main-header hero">
-        <div class="container hero-content">
-            <h1>Курс: Системне програмування</h1>
-            <p class="author">
-                Студент: <strong>Шимчук Владислав</strong> | Група: <strong>1 КТ 23</strong>
+
+    <div class="background-glow"></div>
+
+    <!-- Шапка портфоліо -->
+    <header class="hero">
+        <div class="container">
+            <div class="profile-badge">
+                <i class="fas fa-laptop-code"></i> Портфоліо курсів
+            </div>
+            <h1 class="gradient-text">Системне програмування</h1>
+            <p class="hero-author">
+                <i class="fas fa-user-graduate"></i> Студент: <strong>Шимчук Владислав</strong> &bull; Група <strong>1 КТ 23</strong>
             </p>
-            <a href="https://github.com/Shymchukv/sys-prog-course" target="_blank" class="github-link-btn">
-                Перейти до репозиторію GitHub
-            </a>
+            <div class="hero-actions">
+                <a href="https://github.com/Shymchukv/sys-prog-course" target="_blank" class="github-btn">
+                    <i class="fab fa-github"></i> Репозиторій курсу
+                </a>
+            </div>
         </div>
     </header>
 
+    <!-- Основний контент -->
     <main class="container">
-        <h2>Практичні роботи та теми курсу</h2>
-        <p class="course-desc">Матеріали та виконані завдання з дисципліни.</p>
+        
+        <div class="section-header">
+            <h2><i class="fas fa-layer-group icon-neon"></i> Практичні роботи та модулі</h2>
+            <p>Оберіть потрібну тему для перегляду матеріалів та звітів</p>
+        </div>
 
         <div class="topics-grid">
-            <!-- ПОСИЛАННЯ НА ТЕМУ GIT ВСТАВЛЕНО СЮДИ -->
-            <a href="https://shymchukv.github.io/pr-git-pages/" class="topic-card active" target="_blank">
-                <span class="badge">ПР 1.2</span>
-                <h3>Система контролю версій Git та GitHub Pages</h3>
-                <p>Базові команди Git, переваги СКВ, сертифікат та джерела.</p>
-                <span class="link-text">Перейти до теми →</span>
+            
+            <!-- ТЕМА 1: Git та GitHub Pages (АКТИВНА) -->
+            <a href="https://shymchukv.github.io/pr-git-pages/" target="_blank" class="topic-card active">
+                <div class="card-status status-done">
+                    <i class="fas fa-check"></i> Виконано
+                </div>
+                <div class="card-body">
+                    <div class="card-icon"><i class="fab fa-git-alt"></i></div>
+                    <span class="pr-tag">ПР 1.2</span>
+                    <h3>Git & GitHub Pages</h3>
+                    <p>Робота з системами контролю версій, базові команди Git, налаштування та публікація сторінки.</p>
+                </div>
+                <div class="card-footer">
+                    <span>Відкрити роботу</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
             </a>
 
-            <!-- Заглушка для ПР 1.3 -->
+            <!-- ТЕМА 2: Заглушка (МАЙБУТНЯ) -->
             <div class="topic-card disabled">
-                <span class="badge">ПР 1.3</span>
-                <h3>Назва наступної теми</h3>
-                <p>Матеріали будуть додані згодом...</p>
+                <div class="card-status status-wait">
+                    <i class="fas fa-hourglass-half"></i> В розробці
+                </div>
+                <div class="card-body">
+                    <div class="card-icon"><i class="fas fa-microchip"></i></div>
+                    <span class="pr-tag">ПР 1.3</span>
+                    <h3>Назва наступної теми</h3>
+                    <p>Матеріали та практичні завдання будуть завантажені після виконання роботи.</p>
+                </div>
+                <div class="card-footer">
+                    <span>Скоро буде</span>
+                    <i class="fas fa-lock"></i>
+                </div>
             </div>
 
-            <!-- Заглушка для ПР 2.1 -->
+            <!-- ТЕМА 3: Заглушка (МАЙБУТНЯ) -->
             <div class="topic-card disabled">
-                <span class="badge">ПР 2.1</span>
-                <h3>Назва наступної теми</h3>
-                <p>Матеріали будуть додані згодом...</p>
+                <div class="card-status status-wait">
+                    <i class="fas fa-hourglass-half"></i> В розробці
+                </div>
+                <div class="card-body">
+                    <div class="card-icon"><i class="fas fa-terminal"></i></div>
+                    <span class="pr-tag">ПР 2.1</span>
+                    <h3>Назва наступної теми</h3>
+                    <p>Матеріали та практичні завдання будуть завантажені після виконання роботи.</p>
+                </div>
+                <div class="card-footer">
+                    <span>Скоро буде</span>
+                    <i class="fas fa-lock"></i>
+                </div>
             </div>
+
         </div>
+
     </main>
 
     <footer>
-        <p>© 2026 Системне програмування. Шимчук Владислав (Група 1 КТ 23)</p>
+        <p>© 2026 Шимчук Владислав | Група 1 КТ 23</p>
+        <p class="sub-footer">Платформа GitHub Pages</p>
     </footer>
+
 </body>
 </html>
