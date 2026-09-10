@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    background: #24292e;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero h1 { margin-bottom: 10px; }
+.author { color: #58a6ff; font-weight: bold; }
+
+.github-link-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #238636;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.topic-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.2s;
+}
+
+.topic-card.active:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.topic-card.disabled {
+    opacity: 0.55;
+    background: #eef1f5;
+}
+
+.badge {
+    background: #2da44e;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.badge.in-progress, .badge.upcoming {
+    background: #6e7681;
+}
+
+.topic-card h3 {
+    margin: 12px 0 8px 0;
+    color: #0969da;
+}
+
+.link-text {
+    display: inline-block;
+    margin-top: 15px;
+    color: #0969da;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+    font-size: 0.9rem;
+}
